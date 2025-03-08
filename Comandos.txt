@@ -1,3 +1,5 @@
+Não se esqueça de criar um ambiente virtual
+
 npm run start  # Inicia o bot
 ou
 node index.js  # Executa o código do bot diretamente
