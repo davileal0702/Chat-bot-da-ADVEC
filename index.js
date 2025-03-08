@@ -37,6 +37,24 @@ client.on('message', async (message) => {
 
         console.log(`📩 Mensagem recebida de ${message.from}: ${message.body}`);
 
+
+        // Verifica se veio de outro fluxo
+        if (estadosUsuarios[message.from] === 'Culto') {
+            await opcao1(client, message, estadosUsuarios);
+            return;
+        };
+        if (estadosUsuarios[message.from] === 'culto_encerrado') {
+            await opcao1(client, message, estadosUsuarios);
+            return;
+        };
+        if (estadosUsuarios[message.from] === 'resposta_encerramento') {
+            await opcao1(client, message, estadosUsuarios);
+            return;
+        };
+
+
+
+
         // Enviar mensagem de boas-vindas apenas uma vez por usuário
         if (!estadosUsuarios[message.from]) {
             const mensagemBoasVindas = `👋 Olá! Seja bem-vindo(a)!`;
