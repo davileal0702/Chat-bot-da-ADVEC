@@ -1,4 +1,23 @@
-Não se esqueça de criar um ambiente virtual
+📌 1️⃣ Criar um ambiente virtual Node.js
+mkdir meu-bot-whatsapp
+cd meu-bot-whatsapp
+npm init -y
+
+📌 2️⃣ Instalar dependências
+npm install whatsapp-web.js qrcode-terminal fs-extra
+
+📌 3️⃣ Criar estrutura do projeto
+mkdir src
+cd src
+touch index.js opcao1.js
+cd ..
+
+📌 4️⃣ Rodar o projeto
+node src/index.js
+
+
+
+Pós criação do ambiente virtual
 
 npm run start  # Inicia o bot
 ou
