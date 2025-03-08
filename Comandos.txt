@@ -1,0 +1,9 @@
+npm run start  # Inicia o bot
+ou
+node index.js  # Executa o código do bot diretamente
+
+
+pm2 start index.js --name "whatsapp-bot"  # Mantém o bot ativo
+pm2 list  # Lista os processos ativos
+pm2 stop whatsapp-bot  # Para o bot
+pm2 delete whatsapp-bot  # Remove o bot do PM2
